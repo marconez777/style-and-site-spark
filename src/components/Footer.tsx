@@ -12,17 +12,19 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/30 border-t border-border">
+    <footer className="bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 py-16">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">TV</span>
+              <div className="bg-primary text-primary-foreground px-2 py-1 rounded font-bold text-lg">
+                IPTV
               </div>
-              <span className="text-xl font-bold text-foreground">IPTV Pro</span>
+              <div className="bg-primary text-primary-foreground px-2 py-1 rounded font-bold text-lg">
+                VERIOS
+              </div>
             </div>
             
             <p className="text-muted-foreground">

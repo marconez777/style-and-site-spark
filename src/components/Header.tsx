@@ -6,43 +6,49 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b border-border">
+    <header className="bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60 sticky top-0 z-50 border-b border-gray-800">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">TV</span>
+            <div className="bg-primary text-primary-foreground px-2 py-1 rounded font-bold text-lg">
+              IPTV
             </div>
-            <span className="text-xl font-bold text-foreground">IPTV Pro</span>
+            <div className="bg-primary text-primary-foreground px-2 py-1 rounded font-bold text-lg">
+              VERIOS
+            </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <a href="#home" className="text-white hover:text-primary transition-colors">
               Início
             </a>
-            <a href="#features" className="text-foreground hover:text-primary transition-colors">
+            <a href="#features" className="text-white hover:text-primary transition-colors">
               Recursos
             </a>
-            <a href="#plans" className="text-foreground hover:text-primary transition-colors">
+            <a href="#plans" className="text-white hover:text-primary transition-colors">
               Planos
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
-              Contato
+            <a href="#about" className="text-white hover:text-primary transition-colors">
+              Sobre
+            </a>
+            <a href="#blog" className="text-white hover:text-primary transition-colors">
+              Blog
             </a>
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline">Login</Button>
-            <Button>Assinar Agora</Button>
+          <div className="hidden md:block">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
+              TESTE IPTV GRÁTIS
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary"
+            className="md:hidden p-2 text-white hover:text-primary"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -50,23 +56,27 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
             <nav className="flex flex-col space-y-4 pt-4">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors">
+              <a href="#home" className="text-white hover:text-primary transition-colors">
                 Início
               </a>
-              <a href="#features" className="text-foreground hover:text-primary transition-colors">
+              <a href="#features" className="text-white hover:text-primary transition-colors">
                 Recursos
               </a>
-              <a href="#plans" className="text-foreground hover:text-primary transition-colors">
+              <a href="#plans" className="text-white hover:text-primary transition-colors">
                 Planos
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">
-                Contato
+              <a href="#about" className="text-white hover:text-primary transition-colors">
+                Sobre
               </a>
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="w-full">Login</Button>
-                <Button className="w-full">Assinar Agora</Button>
+              <a href="#blog" className="text-white hover:text-primary transition-colors">
+                Blog
+              </a>
+              <div className="pt-4">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
+                  TESTE IPTV GRÁTIS
+                </Button>
               </div>
             </nav>
           </div>

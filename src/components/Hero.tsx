@@ -1,110 +1,64 @@
 import { Button } from "@/components/ui/button";
-import { Play, Tv, Wifi, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/10" />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80 z-10" />
+        {/* Background pattern to simulate movie posters */}
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
+      </div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
-                <Zap className="w-4 h-4 text-primary mr-2" />
-                <span className="text-sm font-medium text-primary">Transmissão Ultra HD</span>
-              </div>
-              
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                <span className="text-foreground">Sua TV,</span>
-                <br />
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Sem Limites
-                </span>
-              </h1>
-              
-              <p className="text-xl text-muted-foreground max-w-lg">
-                Acesse milhares de canais em 4K, filmes, séries e esportes ao vivo. 
-                A melhor experiência IPTV do Brasil.
-              </p>
-            </div>
-
-            {/* Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Tv className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground">+10.000</div>
-                  <div className="text-sm text-muted-foreground">Canais</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                  <Play className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground">Qualidade 4K</div>
-                  <div className="text-sm text-muted-foreground">Ultra HD</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
-                  <Wifi className="w-5 h-5 text-secondary-foreground" />
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime</div>
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8">
-                Começar Teste Grátis
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
-                Ver Demonstração
-              </Button>
-            </div>
-
-            <div className="text-sm text-muted-foreground">
-              ✓ 7 dias grátis • ✓ Sem compromisso • ✓ Suporte 24h
-            </div>
+      <div className="container mx-auto px-4 py-20 relative z-20">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Top Button */}
+          <div className="mb-8">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-3 text-lg font-semibold">
+              TESTE IPTV GRÁTIS
+            </Button>
           </div>
+          
+          {/* Main Title */}
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="text-white block">IPTV TESTE GRÁTIS EM</span>
+              <span className="text-primary block">ALTA QUALIDADE</span>
+              <span className="text-white block">LISTA ATUALIZADA</span>
+            </h1>
+          </div>
+          
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Assista canais ao vivo, filmes e séries no celular ou na TV com 
+            transmissão estável, imagem em 4K e sem complicações.
+          </p>
 
-          {/* Right Content - Hero Image */}
-          <div className="relative">
-            <div className="relative w-full h-[400px] lg:h-[500px] rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 border border-border/50 overflow-hidden">
-              {/* TV Frame */}
-              <div className="absolute inset-4 bg-background rounded-xl border-2 border-border shadow-2xl">
-                {/* Screen */}
-                <div className="w-full h-full rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-20 h-20 mx-auto bg-primary/20 rounded-full flex items-center justify-center">
-                      <Play className="w-10 h-10 text-primary" />
-                    </div>
-                    <div className="text-muted-foreground">
-                      <div className="text-lg font-semibold">Transmissão ao Vivo</div>
-                      <div className="text-sm">4K Ultra HD</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/20 rounded-full blur-xl" />
-            </div>
+          {/* CTA Button */}
+          <div className="pt-8">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-12 py-6 text-xl font-bold"
+            >
+              TESTE GRÁTIS
+            </Button>
           </div>
         </div>
+      </div>
+
+      {/* WhatsApp Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Button 
+          size="icon" 
+          className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg"
+        >
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.688"/>
+          </svg>
+        </Button>
       </div>
     </section>
   );
