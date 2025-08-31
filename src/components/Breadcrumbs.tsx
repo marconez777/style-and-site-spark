@@ -8,25 +8,25 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs = ({ current, parent }: BreadcrumbsProps) => {
   return (
-    <div className="bg-gray-800 border-b border-gray-700 py-4">
-      <div className="container mx-auto px-4">
-        <nav className="flex items-center space-x-3 text-sm">
+    <div className="bg-black/60 backdrop-blur-sm border-b border-gray-800/50">
+      <div className="container mx-auto px-4 py-3">
+        <nav className="flex items-center space-x-2 text-sm">
           <Link 
             to="/" 
-            className="flex items-center text-gray-300 hover:text-primary transition-colors"
+            className="flex items-center text-gray-400 hover:text-primary transition-colors duration-200"
           >
-            <Home size={16} className="mr-2" />
+            <Home size={14} className="mr-1.5" />
             Início
           </Link>
           
           {parent && (
             <>
-              <ChevronRight size={16} className="text-gray-500" />
-              <span className="text-gray-400">{parent}</span>
+              <ChevronRight size={14} className="text-gray-600" />
+              <span className="text-gray-500">{parent}</span>
             </>
           )}
           
-          <ChevronRight size={16} className="text-gray-500" />
+          <ChevronRight size={14} className="text-gray-600" />
           <span className="text-white font-medium">{current}</span>
         </nav>
       </div>
