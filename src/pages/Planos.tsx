@@ -62,6 +62,10 @@ const Planos = () => {
       </Helmet>
       
       <Header />
+      {/* TESTE BREADCRUMB FIXO */}
+      <div className="bg-red-600 text-white py-4 px-4 text-center font-bold">
+        TESTE BREADCRUMB: Início - Planos
+      </div>
       <Breadcrumbs current="Planos" />
       <main className="pt-0">
         {/* Hero Section */}
