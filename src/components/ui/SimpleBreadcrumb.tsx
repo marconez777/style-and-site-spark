@@ -6,7 +6,7 @@ interface SimpleBreadcrumbProps {
 
 const SimpleBreadcrumb = ({ currentPage }: SimpleBreadcrumbProps) => {
   return (
-    <nav className="bg-muted/10 py-4 text-sm">
+    <nav className="bg-muted/10 py-4 text-sm mt-20">
       <div className="container mx-auto px-4 flex items-center gap-1.5">
         <Link to="/" className="text-muted-foreground hover:text-primary">
           Início
