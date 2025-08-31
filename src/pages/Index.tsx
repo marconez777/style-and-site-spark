@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black">
       <Helmet>
-        <title>IPTV Ar Play Digital - Melhor IPTV do Brasil | +100.000 Conteúdos</title>
-        <meta name="description" content="IPTV Ar Play Digital: +100.000 canais, filmes e séries em HD/4K. Planos a partir de R$29,90. Teste grátis! Melhor IPTV do Brasil com suporte 24h." />
-        <meta name="keywords" content="iptv brasil, iptv premium, ar play digital, iptv hd, canais iptv, teste grátis iptv" />
+        <title>IPTV Ar Play Digital - Melhor IPTV Brasil 2025 | Teste Grátis</title>
+        <meta name="description" content="IPTV Premium Ar Play: +100 mil canais HD/4K, filmes e séries. Planos R$29,90/mês. Teste grátis 24h! Melhor IPTV Brasil com suporte completo." />
+        <meta name="keywords" content="iptv brasil, iptv premium, ar play digital, iptv hd, canais iptv, teste grátis iptv, melhor iptv 2025" />
         <link rel="canonical" href="https://arplaydigital.com" />
       </Helmet>
       

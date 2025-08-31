@@ -9,9 +9,9 @@ const Streamings = () => {
   return (
     <>
       <Helmet>
-        <title>Streamings Ilimitados IPTV - Ar Play Digital | Netflix, Prime, Disney+</title>
-        <meta name="description" content="Todos os streamings em um lugar só! Netflix, Prime Video, Disney+, HBO Max e mais. Filmes e séries ilimitados com IPTV Ar Play." />
-        <meta name="keywords" content="streamings iptv, netflix iptv, prime video iptv, disney plus iptv, hbo max iptv, filmes séries iptv" />
+        <title>Streamings IPTV - Netflix, Prime, Disney+ Ilimitados | Ar Play</title>
+        <meta name="description" content="Todos os streamings em um IPTV: Netflix, Prime Video, Disney+, HBO Max, Apple TV+. Filmes e séries 4K ilimitados. Assinatura única!" />
+        <meta name="keywords" content="streamings iptv, netflix iptv, prime video iptv, disney plus iptv, filmes séries iptv, streaming 4k" />
         <link rel="canonical" href="https://arplaydigital.com/streamings" />
       </Helmet>
 

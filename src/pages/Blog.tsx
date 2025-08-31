@@ -40,9 +40,9 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-black">
       <Helmet>
-        <title>Blog IPTV - Dicas e Tutoriais | Ar Play Digital</title>
-        <meta name="description" content="Blog com dicas, tutoriais e novidades sobre IPTV. Aprenda como configurar, melhores dispositivos e comparativos. Conteúdo exclusivo Ar Play." />
-        <meta name="keywords" content="blog iptv, tutoriais iptv, dicas iptv, configurar iptv, dispositivos iptv" />
+        <title>Blog IPTV 2025 - Tutoriais e Dicas | Ar Play Digital</title>
+        <meta name="description" content="Blog IPTV Ar Play: tutoriais completos, configuração Smart TV, melhores dispositivos e dicas exclusivas. Aprenda tudo sobre IPTV gratuitamente!" />
+        <meta name="keywords" content="blog iptv, tutoriais iptv, configurar iptv smart tv, dicas iptv, guia iptv 2025, como usar iptv" />
         <link rel="canonical" href="https://arplaydigital.com/blog" />
       </Helmet>
       

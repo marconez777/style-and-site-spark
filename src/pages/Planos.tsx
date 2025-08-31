@@ -55,9 +55,9 @@ const Planos = () => {
   return (
     <div className="min-h-screen bg-black">
       <Helmet>
-        <title>Planos IPTV - Ar Play Digital | Melhor IPTV do Brasil</title>
-        <meta name="description" content="Planos IPTV Ar Play com +100.000 conteúdos, qualidade HD/SD, EPG e suporte 24h. Mensal R$29,90, Trimestral R$75,00, Semestral R$140,00. Teste grátis!" />
-        <meta name="keywords" content="planos iptv, preços iptv, iptv brasil, ar play digital, teste grátis iptv" />
+        <title>Planos IPTV Ar Play - Preços R$29,90 | Teste Grátis 24h</title>
+        <meta name="description" content="Planos IPTV Ar Play: Mensal R$29,90, Trimestral R$75, Semestral R$140. +100 mil canais HD, EPG, suporte 24h. Teste grátis sem compromisso!" />
+        <meta name="keywords" content="planos iptv, preços iptv, iptv barato, ar play preços, teste grátis iptv, melhor preço iptv brasil" />
         <link rel="canonical" href="https://arplaydigital.com/planos" />
       </Helmet>
       

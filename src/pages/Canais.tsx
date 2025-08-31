@@ -9,9 +9,9 @@ const Canais = () => {
   return (
     <>
       <Helmet>
-        <title>+10.000 Canais IPTV - Ar Play Digital | Esportes, Filmes, Séries</title>
-        <meta name="description" content="Mais de 10.000 canais IPTV na Ar Play. ESPN, SporTV, HBO, Netflix, Cartoon Network e muito mais. Qualidade HD/4K garantida!" />
-        <meta name="keywords" content="canais iptv, lista canais iptv, espn iptv, hbo iptv, canais esportes iptv, canais filmes iptv" />
+        <title>Lista +100 Mil Canais IPTV - ESPN, SporTV, HBO | Ar Play</title>
+        <meta name="description" content="Mais de 100 mil canais IPTV Ar Play: ESPN, SporTV, HBO, Netflix, Globo, Band e muito mais! Qualidade HD/4K, EPG completo. Veja a lista!" />
+        <meta name="keywords" content="lista canais iptv, canais esportes iptv, espn iptv, globo iptv, canais hd iptv, programação iptv" />
         <link rel="canonical" href="https://arplaydigital.com/canais" />
       </Helmet>
 

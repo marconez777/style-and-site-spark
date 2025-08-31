@@ -37,9 +37,9 @@ const Sobre = () => {
   return (
     <div className="min-h-screen bg-black">
       <Helmet>
-        <title>Sobre a Ar Play Digital | IPTV Premium no Brasil</title>
-        <meta name="description" content="Conheça a Ar Play Digital, líder em IPTV no Brasil. Tecnologia, qualidade e atendimento humanizado com suporte 24h e estabilidade garantida." />
-        <meta name="keywords" content="sobre ar play, empresa iptv, melhor iptv brasil, ar play digital história" />
+        <title>Sobre Ar Play Digital - Líder IPTV Brasil | Nossa História</title>
+        <meta name="description" content="Conheça a Ar Play Digital: empresa líder em IPTV Brasil. Tecnologia de ponta, suporte humanizado 24h e compromisso com qualidade desde 2020." />
+        <meta name="keywords" content="sobre ar play, empresa iptv brasil, história ar play digital, melhor empresa iptv, iptv confiável" />
         <link rel="canonical" href="https://arplaydigital.com/sobre" />
       </Helmet>
       
