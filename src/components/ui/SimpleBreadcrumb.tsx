@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 
 interface SimpleBreadcrumbProps {
   currentPage: string;
+  bgColor?: string;
 }
 
-const SimpleBreadcrumb = ({ currentPage }: SimpleBreadcrumbProps) => {
+const SimpleBreadcrumb = ({ currentPage, bgColor = "" }: SimpleBreadcrumbProps) => {
   return (
-    <nav className="py-4 text-sm mt-20">
+    <nav className={`py-4 text-sm mt-20 ${bgColor}`}>
       <div className="container mx-auto px-4 flex items-center gap-1.5">
         <Link to="/" className="text-muted-foreground hover:text-primary">
           Início

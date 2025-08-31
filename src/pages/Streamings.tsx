@@ -17,11 +17,7 @@ const Streamings = () => {
 
       <div className="min-h-screen bg-black">
         <Header />
-        <section className="bg-muted/10 py-4">
-          <div className="container mx-auto px-4">
-            <SimpleBreadcrumb currentPage="Streamings" />
-          </div>
-        </section>
+        <SimpleBreadcrumb currentPage="Streamings" bgColor="bg-gradient-to-br from-primary/20 to-secondary/20" />
         
         <main className="pt-0">
 
