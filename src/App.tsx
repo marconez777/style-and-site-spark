@@ -11,6 +11,7 @@ import Blog from "./pages/Blog";
 import Dispositivos from "./pages/Dispositivos";
 import Canais from "./pages/Canais";
 import Streamings from "./pages/Streamings";
+import IptvPlayerOnline from "./pages/IptvPlayerOnline";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/dispositivos" element={<Dispositivos />} />
             <Route path="/canais" element={<Canais />} />
             <Route path="/streamings" element={<Streamings />} />
+            <Route path="/iptv-player-online" element={<IptvPlayerOnline />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
