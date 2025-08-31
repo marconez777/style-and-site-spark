@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageBreadcrumb from "@/components/PageBreadcrumb";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight } from "lucide-react";
@@ -47,7 +47,7 @@ const Blog = () => {
       </Helmet>
       
       <Header />
-      <PageBreadcrumb items={[{ label: "Blog" }]} />
+      <Breadcrumbs current="Blog" />
       <main className="pt-0">
         {/* Hero Section */}
         <section className="py-20 bg-black text-white">

@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageBreadcrumb from "@/components/PageBreadcrumb";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Tv, Monitor, Tablet } from "lucide-react";
 
@@ -17,10 +17,7 @@ const Dispositivos = () => {
 
       <div className="min-h-screen bg-black">
         <Header />
-        <PageBreadcrumb items={[
-          { label: "Recursos", href: "#" },
-          { label: "Dispositivos" }
-        ]} />
+        <Breadcrumbs current="Dispositivos" parent="Recursos" />
         
         <main className="pt-0">
 

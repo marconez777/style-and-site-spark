@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageBreadcrumb from "@/components/PageBreadcrumb";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Play, Download, Monitor, Wifi } from "lucide-react";
 
@@ -17,10 +17,7 @@ const Streamings = () => {
 
       <div className="min-h-screen bg-black">
         <Header />
-        <PageBreadcrumb items={[
-          { label: "Recursos", href: "#" },
-          { label: "Streamings" }
-        ]} />
+        <Breadcrumbs current="Streamings" parent="Recursos" />
         
         <main className="pt-0">
 
