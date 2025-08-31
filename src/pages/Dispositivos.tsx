@@ -1,52 +1,28 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Link } from "react-router-dom";
 import { Smartphone, Tv, Monitor, Tablet } from "lucide-react";
 
 const Dispositivos = () => {
   return (
     <>
       <Helmet>
-        <title>Dispositivos Compatíveis - IPTV VERIOS</title>
-        <meta name="description" content="Confira todos os dispositivos compatíveis com nosso serviço IPTV. Smart TV, Android, iOS, PC e muito mais." />
-        <meta name="keywords" content="IPTV dispositivos, Smart TV, Android TV, iOS, streaming dispositivos" />
-        <link rel="canonical" href="/dispositivos" />
+        <title>Dispositivos Compatíveis IPTV - Ar Play Digital | TV, Celular, PC</title>
+        <meta name="description" content="IPTV Ar Play funciona em Smart TV, Android, iOS, PC, TV Box e mais. Compatibilidade universal com todos os dispositivos. Teste grátis!" />
+        <meta name="keywords" content="dispositivos iptv, smart tv iptv, android iptv, ios iptv, pc iptv, tv box iptv" />
+        <link rel="canonical" href="https://arplaydigital.com/dispositivos" />
       </Helmet>
 
       <div className="min-h-screen bg-black">
         <Header />
+        <PageBreadcrumb items={[
+          { label: "Recursos", href: "#" },
+          { label: "Dispositivos" }
+        ]} />
         
-        <main className="pt-20">
-          {/* Breadcrumbs */}
-          <section className="bg-muted/10 py-4">
-            <div className="container mx-auto px-4">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/" className="text-muted-foreground hover:text-primary">
-                        Início
-                      </Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage className="text-white">Dispositivos</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-            </div>
-          </section>
+        <main className="pt-0">
 
           {/* Hero Section */}
           <section className="py-20 bg-gradient-to-br from-primary/20 to-secondary/20">

@@ -1,52 +1,28 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Link } from "react-router-dom";
 import { Tv, Film, Music, Baby } from "lucide-react";
 
 const Canais = () => {
   return (
     <>
       <Helmet>
-        <title>Lista de Canais IPTV - IPTV VERIOS</title>
-        <meta name="description" content="Confira nossa extensa lista de canais IPTV. Esportes, filmes, séries, infantil e muito mais." />
-        <meta name="keywords" content="canais IPTV, lista canais, TV online, streaming canais" />
-        <link rel="canonical" href="/canais" />
+        <title>+10.000 Canais IPTV - Ar Play Digital | Esportes, Filmes, Séries</title>
+        <meta name="description" content="Mais de 10.000 canais IPTV na Ar Play. ESPN, SporTV, HBO, Netflix, Cartoon Network e muito mais. Qualidade HD/4K garantida!" />
+        <meta name="keywords" content="canais iptv, lista canais iptv, espn iptv, hbo iptv, canais esportes iptv, canais filmes iptv" />
+        <link rel="canonical" href="https://arplaydigital.com/canais" />
       </Helmet>
 
       <div className="min-h-screen bg-black">
         <Header />
+        <PageBreadcrumb items={[
+          { label: "Recursos", href: "#" },
+          { label: "Canais" }
+        ]} />
         
-        <main className="pt-20">
-          {/* Breadcrumbs */}
-          <section className="bg-muted/10 py-4">
-            <div className="container mx-auto px-4">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/" className="text-muted-foreground hover:text-primary">
-                        Início
-                      </Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage className="text-white">Canais</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-            </div>
-          </section>
+        <main className="pt-0">
 
           {/* Hero Section */}
           <section className="py-20 bg-gradient-to-br from-primary/20 to-secondary/20">

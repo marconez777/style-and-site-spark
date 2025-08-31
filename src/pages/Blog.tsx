@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   const posts = [
@@ -37,8 +39,16 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-black">
+      <Helmet>
+        <title>Blog IPTV - Dicas e Tutoriais | Ar Play Digital</title>
+        <meta name="description" content="Blog com dicas, tutoriais e novidades sobre IPTV. Aprenda como configurar, melhores dispositivos e comparativos. Conteúdo exclusivo Ar Play." />
+        <meta name="keywords" content="blog iptv, tutoriais iptv, dicas iptv, configurar iptv, dispositivos iptv" />
+        <link rel="canonical" href="https://arplaydigital.com/blog" />
+      </Helmet>
+      
       <Header />
-      <main className="pt-20">
+      <PageBreadcrumb items={[{ label: "Blog" }]} />
+      <main className="pt-0">
         {/* Hero Section */}
         <section className="py-20 bg-black text-white">
           <div className="container mx-auto px-4 text-center">

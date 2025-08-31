@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Planos = () => {
   const plans = [
@@ -52,8 +54,16 @@ const Planos = () => {
 
   return (
     <div className="min-h-screen bg-black">
+      <Helmet>
+        <title>Planos IPTV - Ar Play Digital | Melhor IPTV do Brasil</title>
+        <meta name="description" content="Planos IPTV Ar Play com +100.000 conteúdos, qualidade HD/SD, EPG e suporte 24h. Mensal R$29,90, Trimestral R$75,00, Semestral R$140,00. Teste grátis!" />
+        <meta name="keywords" content="planos iptv, preços iptv, iptv brasil, ar play digital, teste grátis iptv" />
+        <link rel="canonical" href="https://arplaydigital.com/planos" />
+      </Helmet>
+      
       <Header />
-      <main className="pt-20">
+      <PageBreadcrumb items={[{ label: "Planos" }]} />
+      <main className="pt-0">
         {/* Hero Section */}
         <section className="py-20 bg-black text-white">
           <div className="container mx-auto px-4 text-center">

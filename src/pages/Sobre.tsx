@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Shield, Users, Headphones, Zap, Heart, Star } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Sobre = () => {
   const benefits = [
@@ -34,8 +36,16 @@ const Sobre = () => {
 
   return (
     <div className="min-h-screen bg-black">
+      <Helmet>
+        <title>Sobre a Ar Play Digital | IPTV Premium no Brasil</title>
+        <meta name="description" content="Conheça a Ar Play Digital, líder em IPTV no Brasil. Tecnologia, qualidade e atendimento humanizado com suporte 24h e estabilidade garantida." />
+        <meta name="keywords" content="sobre ar play, empresa iptv, melhor iptv brasil, ar play digital história" />
+        <link rel="canonical" href="https://arplaydigital.com/sobre" />
+      </Helmet>
+      
       <Header />
-      <main className="pt-20">
+      <PageBreadcrumb items={[{ label: "Sobre" }]} />
+      <main className="pt-0">
         {/* Hero Section */}
         <section className="py-20 bg-black text-white">
           <div className="container mx-auto px-4">

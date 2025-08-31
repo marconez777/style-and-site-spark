@@ -1,52 +1,28 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Link } from "react-router-dom";
 import { Play, Download, Monitor, Wifi } from "lucide-react";
 
 const Streamings = () => {
   return (
     <>
       <Helmet>
-        <title>Streamings e VOD - IPTV VERIOS</title>
-        <meta name="description" content="Acesse milhares de filmes e séries em streaming. Netflix, Prime Video, Disney+ e muito mais em um só lugar." />
-        <meta name="keywords" content="streaming IPTV, VOD, filmes online, séries streaming" />
-        <link rel="canonical" href="/streamings" />
+        <title>Streamings Ilimitados IPTV - Ar Play Digital | Netflix, Prime, Disney+</title>
+        <meta name="description" content="Todos os streamings em um lugar só! Netflix, Prime Video, Disney+, HBO Max e mais. Filmes e séries ilimitados com IPTV Ar Play." />
+        <meta name="keywords" content="streamings iptv, netflix iptv, prime video iptv, disney plus iptv, hbo max iptv, filmes séries iptv" />
+        <link rel="canonical" href="https://arplaydigital.com/streamings" />
       </Helmet>
 
       <div className="min-h-screen bg-black">
         <Header />
+        <PageBreadcrumb items={[
+          { label: "Recursos", href: "#" },
+          { label: "Streamings" }
+        ]} />
         
-        <main className="pt-20">
-          {/* Breadcrumbs */}
-          <section className="bg-muted/10 py-4">
-            <div className="container mx-auto px-4">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/" className="text-muted-foreground hover:text-primary">
-                        Início
-                      </Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage className="text-white">Streamings</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-            </div>
-          </section>
+        <main className="pt-0">
 
           {/* Hero Section */}
           <section className="py-20 bg-gradient-to-br from-primary/20 to-secondary/20">
