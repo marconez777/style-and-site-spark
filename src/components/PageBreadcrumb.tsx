@@ -12,29 +12,29 @@ interface PageBreadcrumbProps {
 
 const PageBreadcrumb = ({ items }: PageBreadcrumbProps) => {
   return (
-    <div className="bg-gray-900/50 border-b border-gray-700">
-      <div className="container mx-auto px-4 py-4">
-        <nav className="flex items-center space-x-2 text-sm">
+    <div className="bg-gray-800 border-b-2 border-primary py-6">
+      <div className="container mx-auto px-4">
+        <nav className="flex items-center space-x-3 text-base">
           <Link 
             to="/" 
-            className="flex items-center text-gray-300 hover:text-primary transition-colors"
+            className="flex items-center text-white bg-primary/20 px-3 py-2 rounded hover:bg-primary/30 transition-colors"
           >
-            <Home size={16} className="mr-1" />
+            <Home size={18} className="mr-2" />
             Início
           </Link>
           
           {items.map((item, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <ChevronRight size={16} className="text-gray-500" />
+            <div key={index} className="flex items-center space-x-3">
+              <ChevronRight size={18} className="text-primary" />
               {item.href ? (
                 <Link 
                   to={item.href} 
-                  className="text-gray-300 hover:text-primary transition-colors"
+                  className="text-gray-300 bg-gray-700 px-3 py-2 rounded hover:text-primary hover:bg-gray-600 transition-colors"
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-white font-medium">
+                <span className="text-white font-semibold bg-primary px-3 py-2 rounded">
                   {item.label}
                 </span>
               )}
