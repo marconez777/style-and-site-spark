@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
             </div>
             
-            <p className="text-muted-foreground">
+            <p className="text-gray-300">
               A melhor experiência IPTV do Brasil. Milhares de canais em qualidade 4K, 
               filmes, séries e esportes ao vivo na palma da sua mão.
             </p>
@@ -50,30 +50,30 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Links Rápidos</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Links Rápidos</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#home" className="text-gray-300 hover:text-primary transition-colors">
                   Início
                 </a>
               </li>
               <li>
-                <a href="#features" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#features" className="text-gray-300 hover:text-primary transition-colors">
                   Recursos
                 </a>
               </li>
               <li>
-                <a href="#plans" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#plans" className="text-gray-300 hover:text-primary transition-colors">
                   Planos
                 </a>
               </li>
               <li>
-                <a href="#support" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#support" className="text-gray-300 hover:text-primary transition-colors">
                   Suporte
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#faq" className="text-gray-300 hover:text-primary transition-colors">
                   FAQ
                 </a>
               </li>
@@ -82,17 +82,17 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Suporte</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Suporte</h3>
             <ul className="space-y-3">
-              <li className="flex items-center text-muted-foreground">
+              <li className="flex items-center text-gray-300">
                 <Phone className="w-4 h-4 mr-3" />
                 <span>(11) 99999-9999</span>
               </li>
-              <li className="flex items-center text-muted-foreground">
+              <li className="flex items-center text-gray-300">
                 <Mail className="w-4 h-4 mr-3" />
                 <span>contato@iptvpro.com.br</span>
               </li>
-              <li className="flex items-start text-muted-foreground">
+              <li className="flex items-start text-gray-300">
                 <MapPin className="w-4 h-4 mr-3 mt-0.5" />
                 <span>São Paulo, SP<br />Brasil</span>
               </li>
@@ -107,8 +107,8 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Newsletter</h3>
-            <p className="text-muted-foreground mb-4">
+            <h3 className="text-lg font-semibold text-white mb-4">Newsletter</h3>
+            <p className="text-gray-300 mb-4">
               Receba ofertas exclusivas e novidades sobre nossos serviços.
             </p>
             
@@ -123,7 +123,7 @@ const Footer = () => {
               </Button>
             </div>
 
-            <div className="mt-4 text-sm text-muted-foreground">
+            <div className="mt-4 text-sm text-gray-300">
               ✓ Promoções exclusivas<br />
               ✓ Sem spam garantido
             </div>
@@ -133,18 +133,18 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-muted-foreground">
-              © 2024 IPTV Pro. Todos os direitos reservados.
+            <div className="text-sm text-gray-300">
+              © 2024 IPTV VERIOS. Todos os direitos reservados.
             </div>
             
             <div className="flex flex-wrap items-center gap-6 text-sm">
-              <a href="#privacy" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#privacy" className="text-gray-300 hover:text-primary transition-colors">
                 Política de Privacidade
               </a>
-              <a href="#terms" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#terms" className="text-gray-300 hover:text-primary transition-colors">
                 Termos de Uso
               </a>
-              <a href="#cookies" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#cookies" className="text-gray-300 hover:text-primary transition-colors">
                 Cookies
               </a>
             </div>
