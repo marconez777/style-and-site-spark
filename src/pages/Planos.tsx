@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import { SimpleBreadcrumb } from "@/components/ui/SimpleBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -62,7 +62,7 @@ const Planos = () => {
       </Helmet>
       
       <Header />
-      <Breadcrumbs current="Planos" />
+      <SimpleBreadcrumb currentPage="Planos" />
       <main className="pt-0">
         {/* Hero Section */}
         <section className="py-20 bg-black text-white">

@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import { SimpleBreadcrumb } from "@/components/ui/SimpleBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Shield, Users, Headphones, Zap, Heart, Star } from "lucide-react";
@@ -44,7 +44,7 @@ const Sobre = () => {
       </Helmet>
       
       <Header />
-      <Breadcrumbs current="Sobre" />
+      <SimpleBreadcrumb currentPage="Sobre" />
       <main className="pt-0">
         {/* Hero Section */}
         <section className="py-20 bg-black text-white">
