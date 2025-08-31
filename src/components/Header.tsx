@@ -23,7 +23,7 @@ const Header = () => {
           <div className="relative group">
             <button 
               className="text-white hover:text-primary transition-colors flex items-center gap-1"
-              onMouseEnter={() => setTimeout(() => setIsRecursosOpen(true), 1000)}
+              onMouseEnter={() => setIsRecursosOpen(true)}
               onMouseLeave={() => setIsRecursosOpen(false)}
             >
               Recursos
