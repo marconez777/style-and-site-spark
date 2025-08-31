@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRecursosOpen, setIsRecursosOpen] = useState(false);
+  const [hideTimeout, setHideTimeout] = useState<NodeJS.Timeout | null>(null);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
@@ -23,8 +24,17 @@ const Header = () => {
           <div className="relative group">
             <button 
               className="text-white hover:text-primary transition-colors flex items-center gap-1"
-              onMouseEnter={() => setIsRecursosOpen(true)}
-              onMouseLeave={() => setIsRecursosOpen(false)}
+              onMouseEnter={() => {
+                if (hideTimeout) {
+                  clearTimeout(hideTimeout);
+                  setHideTimeout(null);
+                }
+                setIsRecursosOpen(true);
+              }}
+              onMouseLeave={() => {
+                const timeout = setTimeout(() => setIsRecursosOpen(false), 1000);
+                setHideTimeout(timeout);
+              }}
             >
               Recursos
               <ChevronDown size={16} />
@@ -32,8 +42,17 @@ const Header = () => {
             {isRecursosOpen && (
               <div 
                 className="absolute top-full left-0 mt-2 w-48 bg-gray-900 border border-gray-700 rounded-lg shadow-lg py-2 z-50"
-                onMouseEnter={() => setIsRecursosOpen(true)}
-                onMouseLeave={() => setIsRecursosOpen(false)}
+                onMouseEnter={() => {
+                  if (hideTimeout) {
+                    clearTimeout(hideTimeout);
+                    setHideTimeout(null);
+                  }
+                  setIsRecursosOpen(true);
+                }}
+                onMouseLeave={() => {
+                  const timeout = setTimeout(() => setIsRecursosOpen(false), 1000);
+                  setHideTimeout(timeout);
+                }}
               >
                 <Link to="/dispositivos" className="block px-4 py-2 text-white hover:bg-gray-800 hover:text-primary transition-colors">
                   Dispositivos
