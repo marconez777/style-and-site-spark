@@ -17,10 +17,6 @@ const Dispositivos = () => {
 
       <div className="min-h-screen bg-black">
         <Header />
-        {/* TESTE BREADCRUMB DISPOSITIVOS */}
-        <div className="bg-green-600 text-white py-4 px-4 text-center font-bold">
-          TESTE: Início - Recursos - Dispositivos
-        </div>
         <Breadcrumbs current="Dispositivos" parent="Recursos" />
         
         <main className="pt-0">
