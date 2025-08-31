@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import { SimpleBreadcrumb } from "@/components/ui/SimpleBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Tv, Film, Music, Baby } from "lucide-react";
 
@@ -17,7 +17,11 @@ const Canais = () => {
 
       <div className="min-h-screen bg-black">
         <Header />
-        <Breadcrumbs current="Canais" parent="Recursos" />
+        <section className="bg-muted/10 py-4">
+          <div className="container mx-auto px-4">
+            <SimpleBreadcrumb currentPage="Canais" />
+          </div>
+        </section>
         
         <main className="pt-0">
 
