@@ -18,6 +18,7 @@ import IptvTeste4k from "./pages/IptvTeste4k";
 import IptvNaTelevisao from "./pages/IptvNaTelevisao";
 import IptvNoCelular from "./pages/IptvNoCelular";
 import CanaisDeIptv from "./pages/CanaisDeIptv";
+import IptvFilmes from "./pages/IptvFilmes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/iptv-na-televisao" element={<IptvNaTelevisao />} />
             <Route path="/iptv-no-celular" element={<IptvNoCelular />} />
             <Route path="/canais-de-iptv" element={<CanaisDeIptv />} />
+            <Route path="/iptv-filmes" element={<IptvFilmes />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
