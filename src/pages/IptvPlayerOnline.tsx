@@ -12,6 +12,20 @@ const IptvPlayerOnline = () => {
         <title>Teste Agora IPTV Player Online Grátis</title>
         <meta name="description" content="Assista filmes, séries e canais ao vivo em alta qualidade com nosso iptv player online grátis. Teste sem compromisso e descubra a nova forma de assistir TV online." />
         <meta name="keywords" content="iptv player online grátis, assistir tv online grátis, streaming iptv, players de iptv, canais de tv gratuitos" />
+        <meta name="author" content="IPTV Service" />
+        
+        <meta property="og:title" content="Teste Agora IPTV Player Online Grátis" />
+        <meta property="og:description" content="Assista filmes, séries e canais ao vivo em alta qualidade com nosso iptv player online grátis. Teste sem compromisso e descubra a nova forma de assistir TV online." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/placeholder.svg" />
+        <meta property="og:url" content="https://seudominio.com/iptv-player-online" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Teste Agora IPTV Player Online Grátis" />
+        <meta name="twitter:description" content="Assista filmes, séries e canais ao vivo em alta qualidade com nosso iptv player online grátis. Teste sem compromisso!" />
+        <meta name="twitter:image" content="/placeholder.svg" />
+        
+        <link rel="canonical" href="https://seudominio.com/iptv-player-online" />
       </Helmet>
 
       <div className="min-h-screen bg-black">
