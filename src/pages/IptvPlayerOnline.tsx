@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { SimpleBreadcrumb } from "@/components/ui/SimpleBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Tv, Monitor, Tablet } from "lucide-react";
+import Pricing from "@/components/Pricing";
 
 const IptvPlayerOnline = () => {
   return (
@@ -120,6 +121,9 @@ const IptvPlayerOnline = () => {
               </div>
             </div>
           </section>
+
+          {/* Pricing Section */}
+          <Pricing />
 
           {/* Text Content Section */}
           <section className="py-16 bg-muted/5">

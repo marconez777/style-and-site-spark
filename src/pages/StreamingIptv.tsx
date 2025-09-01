@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { SimpleBreadcrumb } from "@/components/ui/SimpleBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Tv, Monitor, Tablet } from "lucide-react";
+import Pricing from "@/components/Pricing";
 
 const StreamingIptv = () => {
   return (
@@ -12,6 +13,20 @@ const StreamingIptv = () => {
         <title>Streaming IPTV – A Evolução da TV Online</title>
         <meta name="description" content="Transforme sua forma de assistir TV com nosso streaming IPTV. Tenha acesso aos melhores canais, filmes e séries em alta qualidade. Teste grátis agora mesmo!" />
         <meta name="keywords" content="streaming iptv, serviço de iptv, melhor iptv, iptv online, canais iptv, iptv p2p" />
+        <meta name="author" content="Ar Play Digital" />
+        
+        <meta property="og:title" content="Streaming IPTV – A Evolução da TV Online" />
+        <meta property="og:description" content="Transforme sua forma de assistir TV com nosso streaming IPTV. Tenha acesso aos melhores canais, filmes e séries em alta qualidade. Teste grátis agora mesmo!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/placeholder.svg" />
+        <meta property="og:url" content="https://arplaydigital.com/streaming-iptv" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Streaming IPTV – A Evolução da TV Online" />
+        <meta name="twitter:description" content="Transforme sua forma de assistir TV com nosso streaming IPTV. Tenha acesso aos melhores canais!" />
+        <meta name="twitter:image" content="/placeholder.svg" />
+        
+        <link rel="canonical" href="https://arplaydigital.com/streaming-iptv" />
       </Helmet>
 
       <div className="min-h-screen bg-black">
@@ -106,6 +121,9 @@ const StreamingIptv = () => {
               </div>
             </div>
           </section>
+
+          {/* Pricing Section */}
+          <Pricing />
 
           {/* Text Content Section */}
           <section className="py-16 bg-muted/5">
