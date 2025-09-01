@@ -43,6 +43,19 @@ const Blog = () => {
         <title>Blog IPTV 2025 - Tutoriais e Dicas | Ar Play Digital</title>
         <meta name="description" content="Blog IPTV Ar Play: tutoriais completos, configuração Smart TV, melhores dispositivos e dicas exclusivas. Aprenda tudo sobre IPTV gratuitamente!" />
         <meta name="keywords" content="blog iptv, tutoriais iptv, configurar iptv smart tv, dicas iptv, guia iptv 2025, como usar iptv" />
+        <meta name="author" content="Ar Play Digital" />
+        
+        <meta property="og:title" content="Blog IPTV 2025 - Tutoriais e Dicas | Ar Play Digital" />
+        <meta property="og:description" content="Blog IPTV Ar Play: tutoriais completos, configuração Smart TV, melhores dispositivos e dicas exclusivas. Aprenda tudo sobre IPTV gratuitamente!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/placeholder.svg" />
+        <meta property="og:url" content="https://arplaydigital.com/blog" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog IPTV 2025 - Tutoriais e Dicas" />
+        <meta name="twitter:description" content="Blog IPTV Ar Play: tutoriais completos, configuração Smart TV, melhores dispositivos e dicas exclusivas!" />
+        <meta name="twitter:image" content="/placeholder.svg" />
+        
         <link rel="canonical" href="https://arplaydigital.com/blog" />
       </Helmet>
       

@@ -40,6 +40,19 @@ const Sobre = () => {
         <title>Sobre Ar Play Digital - Líder IPTV Brasil | Nossa História</title>
         <meta name="description" content="Conheça a Ar Play Digital: empresa líder em IPTV Brasil. Tecnologia de ponta, suporte humanizado 24h e compromisso com qualidade desde 2020." />
         <meta name="keywords" content="sobre ar play, empresa iptv brasil, história ar play digital, melhor empresa iptv, iptv confiável" />
+        <meta name="author" content="Ar Play Digital" />
+        
+        <meta property="og:title" content="Sobre Ar Play Digital - Líder IPTV Brasil | Nossa História" />
+        <meta property="og:description" content="Conheça a Ar Play Digital: empresa líder em IPTV Brasil. Tecnologia de ponta, suporte humanizado 24h e compromisso com qualidade desde 2020." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/placeholder.svg" />
+        <meta property="og:url" content="https://arplaydigital.com/sobre" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sobre Ar Play Digital - Líder IPTV Brasil" />
+        <meta name="twitter:description" content="Conheça a Ar Play Digital: empresa líder em IPTV Brasil. Tecnologia de ponta, suporte humanizado 24h!" />
+        <meta name="twitter:image" content="/placeholder.svg" />
+        
         <link rel="canonical" href="https://arplaydigital.com/sobre" />
       </Helmet>
       

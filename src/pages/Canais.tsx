@@ -12,6 +12,19 @@ const Canais = () => {
         <title>Lista +100 Mil Canais IPTV - ESPN, SporTV, HBO | Ar Play</title>
         <meta name="description" content="Mais de 100 mil canais IPTV Ar Play: ESPN, SporTV, HBO, Netflix, Globo, Band e muito mais! Qualidade HD/4K, EPG completo. Veja a lista!" />
         <meta name="keywords" content="lista canais iptv, canais esportes iptv, espn iptv, globo iptv, canais hd iptv, programação iptv" />
+        <meta name="author" content="Ar Play Digital" />
+        
+        <meta property="og:title" content="Lista +100 Mil Canais IPTV - ESPN, SporTV, HBO | Ar Play" />
+        <meta property="og:description" content="Mais de 100 mil canais IPTV Ar Play: ESPN, SporTV, HBO, Netflix, Globo, Band e muito mais! Qualidade HD/4K, EPG completo. Veja a lista!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/placeholder.svg" />
+        <meta property="og:url" content="https://arplaydigital.com/canais" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lista +100 Mil Canais IPTV - ESPN, SporTV, HBO" />
+        <meta name="twitter:description" content="Mais de 100 mil canais IPTV Ar Play: ESPN, SporTV, HBO, Netflix, Globo, Band e muito mais!" />
+        <meta name="twitter:image" content="/placeholder.svg" />
+        
         <link rel="canonical" href="https://arplaydigital.com/canais" />
       </Helmet>
 

@@ -12,6 +12,19 @@ const Dispositivos = () => {
         <title>Dispositivos IPTV Compatíveis - Smart TV, Android, iOS | Ar Play</title>
         <meta name="description" content="IPTV Ar Play funciona em 100+ dispositivos: Smart TV Samsung/LG, Android, iOS, PC, TV Box, Fire Stick. Configuração fácil em 5 minutos!" />
         <meta name="keywords" content="dispositivos iptv, smart tv iptv, android iptv, ios iptv, tv box iptv, compatibilidade iptv, configurar iptv" />
+        <meta name="author" content="Ar Play Digital" />
+        
+        <meta property="og:title" content="Dispositivos IPTV Compatíveis - Smart TV, Android, iOS | Ar Play" />
+        <meta property="og:description" content="IPTV Ar Play funciona em 100+ dispositivos: Smart TV Samsung/LG, Android, iOS, PC, TV Box, Fire Stick. Configuração fácil em 5 minutos!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/placeholder.svg" />
+        <meta property="og:url" content="https://arplaydigital.com/dispositivos" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dispositivos IPTV Compatíveis - Smart TV, Android, iOS" />
+        <meta name="twitter:description" content="IPTV Ar Play funciona em 100+ dispositivos: Smart TV Samsung/LG, Android, iOS, PC!" />
+        <meta name="twitter:image" content="/placeholder.svg" />
+        
         <link rel="canonical" href="https://arplaydigital.com/dispositivos" />
       </Helmet>
 
