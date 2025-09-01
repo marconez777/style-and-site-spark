@@ -31,76 +31,41 @@ const IptvFilmes = () => {
         <link rel="canonical" href="https://arplay.lovable.app/iptv-filmes" />
       </Helmet>
 
-      <Header />
-      
-      <main>
-        <SimpleBreadcrumb currentPage="IPTV Filmes" />
-
-        {/* Hero Section */}
-        <section className="bg-black text-white py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-                IPTV Filmes
-              </span>
-            </h1>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
-              Tenha cinema em casa com um clique! Assista aos melhores títulos 
-              em alta qualidade, catálogo completo e filmes on demand.
-            </p>
-            <Button className="text-lg px-8 py-6 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white rounded-lg font-semibold">
-              Começar Teste Grátis
-            </Button>
-          </div>
-        </section>
-
-        {/* Compatibility Section */}
-        <section className="py-20 bg-gray-50">
+      <div className="min-h-screen bg-black">
+        <Header />
+        <section className="bg-muted/10 py-4">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-              Compatível com Todos os Seus Dispositivos
-            </h2>
-            
-            <div className="grid md:grid-cols-4 gap-8">
-              {[
-                {
-                  icon: <Smartphone className="w-12 h-12 text-purple-600 mb-4" />,
-                  title: "Smartphones e Tablets",
-                  description: "Android e iOS - Assista onde estiver"
-                },
-                {
-                  icon: <Tv className="w-12 h-12 text-purple-600 mb-4" />,
-                  title: "Smart TVs",
-                  description: "Samsung, LG, Android TV e mais"
-                },
-                {
-                  icon: <Monitor className="w-12 h-12 text-purple-600 mb-4" />,
-                  title: "Computadores",
-                  description: "Windows, Mac e Linux compatível"
-                },
-                {
-                  icon: <Cpu className="w-12 h-12 text-purple-600 mb-4" />,
-                  title: "TV Box e Devices",
-                  description: "Chromecast, Fire Stick, Apple TV"
-                }
-              ].map((device, index) => (
-                <div key={index} className="text-center p-6 bg-white rounded-lg shadow-lg">
-                  <div className="flex justify-center">{device.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{device.title}</h3>
-                  <p className="text-gray-600">{device.description}</p>
-                </div>
-              ))}
-            </div>
+            <SimpleBreadcrumb currentPage="IPTV Filmes" />
           </div>
         </section>
+        
+        <main className="pt-0">
+          {/* Hero Section */}
+          <section className="py-20 bg-gradient-to-br from-primary/20 to-secondary/20">
+            <div className="container mx-auto px-4 text-center">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                IPTV Filmes
+              </h1>
+              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Tenha cinema em casa com um clique! Assista aos melhores títulos em alta qualidade, catálogo completo e filmes on demand.
+              </p>
+              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg">
+                TESTE GRÁTIS AGORA
+              </Button>
+            </div>
+          </section>
 
-        {/* Pricing Section */}
-        <Pricing />
+          {/* Content Section */}
+          <section className="py-20">
+...
+          {/* Pricing Section */}
+          <Pricing />
 
-        {/* Content Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <div className="prose prose-lg max-w-none">
+          {/* Text Content Section */}
+          <section className="py-16 bg-muted/5">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto prose prose-invert">
+                <div className="text-gray-300 space-y-6 text-base leading-relaxed">
               <p className="text-lg text-gray-700 leading-relaxed mb-12">
                 Com o iptv filmes, sua televisão, celular ou computador se transforma em uma verdadeira sala de cinema. Basta instalar um aplicativo compatível e ter internet estável para acessar milhares de títulos atualizados, em alta qualidade e sem limitações. Esqueça filas, mensalidades caras e a programação limitada da TV por assinatura.
               </p>
